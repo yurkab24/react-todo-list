@@ -1,0 +1,30 @@
+@mixin shadow {
+  -webkit-box-shadow: 1px 0px 6px 4px rgb(225 229 253 / 80%);
+  -moz-box-shadow: 1px 0px 6px 4px rgb(225 229 253 / 80%);
+  box-shadow: 1px 0px 6px 4px rgb(225 229 253 / 80%);
+}
+
+@mixin shadow-hover {
+  -webkit-box-shadow: 1px 0px 6px 4px rgb(225 229 253 / 20%);
+  -moz-box-shadow: 1px 0px 6px 4px rgb(225 229 253 / 20%);
+  box-shadow: 1px 0px 6px 4px rgb(225 229 253 / 20%);
+}
+
+@mixin shadow-white {
+  -webkit-box-shadow: 1px 0px 6px 4px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 1px 0px 6px 4px rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 0px 6px 4px rgba(255, 255, 255, 0.8);
+}
+
+@mixin shadow-orange {
+  -webkit-box-shadow: 1px 0px 6px 4px rgb(254 149 104 / 20%);
+  -moz-box-shadow: 1px 0px 6px 4px rgb(254 149 104 / 20%);
+  box-shadow: 1px 0px 6px 4px rgb(254 149 104 / 20%);
+}
+
+@mixin transition {
+  transition: 0.3s ease-in-out;
+}
+
+$main: #fe9568;
+$blue: #9ea7fb;

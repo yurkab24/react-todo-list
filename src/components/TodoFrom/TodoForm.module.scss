@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  min-width: 300px;
+
+  &__input,
+  &__textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid $main;
+    padding: 10px 10px 3px;
+    background: transparent;
+  }
+
+  &__textarea {
+    height: 30px;
+    resize: none;
+  }
+
+  &__button {
+    background: transparent;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #969698;
+    border: 1px solid $main;
+    border-radius: 30px;
+    @include transition;
+
+    &:hover {
+      @include shadow-orange;
+    }
+  }
+}
+
+.error_msg {
+  height: 15px;
+  color: red;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 5px;
+}

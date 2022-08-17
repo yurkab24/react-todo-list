@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.filter {
+  &__item {
+    color: $main;
+    padding: 5px;
+    min-width: 70px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    @include transition;
+    @include shadow;
+
+    &:hover {
+      @include shadow-hover;
+    }
+
+    &--active {
+      @include shadow-hover;
+    }
+  }
+}
